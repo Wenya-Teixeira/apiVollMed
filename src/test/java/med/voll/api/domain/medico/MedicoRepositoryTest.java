@@ -57,7 +57,7 @@ class MedicoRepositoryTest {
         var proximaSegundaAs10 = LocalDate.now()
                 .with(TemporalAdjusters.next(DayOfWeek.MONDAY))
                 .atTime(10, 0);
-        var medico = cadastrarMedico("Medico C", "medico1@voll.med", "123445", Especialidade.CARDIOLOGIA);
+        var medico = cadastrarMedico("Medico A", "medico2@voll.med", "123455", Especialidade.CARDIOLOGIA);
 
         //when ou act - Executa a ação que quero testar
         var medicoLivre = medicoRepository.escolherMedicoAleatorioLivreNaData(Especialidade.CARDIOLOGIA, proximaSegundaAs10);
